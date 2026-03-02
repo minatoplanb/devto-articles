@@ -13,7 +13,7 @@ A while back, I built a text-based "Mission Control" dashboard inside Claude Cod
 
 So I upgraded it into a pixel art visual command center.
 
-![Pixel Office screenshot](https://raw.githubusercontent.com/nicoara-dev/devto-articles/main/images/pixel-office-mission-control.png)
+![Pixel Office screenshot](https://raw.githubusercontent.com/minatoplanb/devto-articles/main/images/pixel-office-mission-control.png)
 
 ---
 
