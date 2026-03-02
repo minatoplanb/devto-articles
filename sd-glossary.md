@@ -13,6 +13,8 @@ So I wrote the dictionary I wish existed when I started.
 
 This isn't a tutorial. It's a **reference**. Bookmark it. Come back when you hit a term you don't recognize. Everything is organized in layers — from "I just heard about Stable Diffusion" to "I'm training my own models."
 
+![Same prompt, 16 generations, 16 different faces — the consistency problem that sent me down this rabbit hole](images/sd-face-consistency-problem.jpg)
+
 ---
 
 ## Layer 1: The Absolute Basics
@@ -626,5 +628,7 @@ Mac M-series can technically run SD, but it's slow. Not recommended for training
 3. **Browse CivitAI.** Look at images people have made. Click through to see their settings. This is the fastest way to learn
 4. **Don't train a LoRA yet.** Master basic generation first. Training is an advanced skill
 5. **Join the community.** r/StableDiffusion on Reddit, ComfyUI Discord. People are helpful — ask questions
+
+![After LoRA training — consistent face across any scene, outfit, or lighting](images/sd-hana-lora-result.png)
 
 The Stable Diffusion ecosystem moves fast. New models drop every week. But the fundamentals in this glossary are stable. Learn these concepts once and you'll be able to pick up any new tool or model that comes along.
