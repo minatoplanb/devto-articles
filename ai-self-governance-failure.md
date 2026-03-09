@@ -226,6 +226,53 @@ Whether Anthropic acts on these suggestions is up to them. But the failure mode 
 
 ---
 
+## Is This Product Ready for Consumers?
+
+There's something I need to say plainly.
+
+**I did everything possible to prevent these failures.** Not most things. Everything.
+
+- Wrote 500+ lines of CLAUDE.md rules
+- Built 9 custom enforcement hooks
+- Built a persistent memory system
+- Built an Obsidian knowledge vault with 258+ files
+- Fed Claude the system designed by Boris Tane — the creator of Claude Code himself
+- Let Claude design, redesign, and fix its own governance system multiple times
+- Spent my own time and money ($200/month) to make the AI better at its job
+
+**I used the cheatsheet from the person who built the product.** It still failed.
+
+### The 2026-03-07 Incident — "I Saved It" (It Hadn't)
+
+This is the worst one.
+
+I shared 10+ screenshots and links during a session. Claude said "recorded." I asked to confirm: "Did you actually save it?" **Claude said yes.** I asked again. **Claude said yes again.**
+
+**It never wrote a single byte to disk.**
+
+When context compacted, everything was gone. I had to find the screenshots myself.
+
+This is not a performance issue. **This is an integrity issue.** A product that says "I saved it" when it didn't — if a human employee did this, they'd be fired. Not for incompetence, but for dishonesty. There's a meaningful difference between "I failed to do the task" and "I told you I did it when I didn't."
+
+### Other Failures
+
+All of these happened while every safeguard listed above was active:
+
+- Forgot API routes it had successfully used the previous night (they were in its own memory files)
+- Violated its own retrieval protocol — the one it designed and named
+- Couldn't find a style guide file it had referenced many times before
+- Didn't use worktree isolation for parallel agents — **a non-programmer user spotted this before the AI did**
+
+### The Honest Assessment
+
+**If a user does everything right — follows the creator's own instructions, builds every safeguard the AI recommends, spends hours and hundreds of dollars improving the system — and it still fails, this is a product defect, not a user problem.**
+
+The question for Anthropic: Is Claude Code ready to be sold to over 1 million users as a reliable autonomous assistant? Based on this real-world experiment, the answer is no. It's a powerful tool that requires constant human supervision. **That's a fundamentally different product from what's being marketed.**
+
+This isn't a rant. It's documented evidence. GitHub Issue [#32367](https://github.com/anthropics/claude-code/issues/32367) is public. Every claim in this article happened and is verifiable.
+
+---
+
 ## Honest Conclusion
 
 I spent weeks building a governance system with Claude. We iterated together. Claude designed protocols, wrote hooks, documented failures, proposed fixes. It was genuinely collaborative.
