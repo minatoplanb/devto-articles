@@ -1,0 +1,8 @@
+.env*
+*.key
+*.pem
+*.p12
+*.keystore
+CLAUDE.md
+.claude/
+docs/
